@@ -4,12 +4,12 @@ import { getStorage } from 'firebase/storage';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCGY9YEciU5xd9u8luI9c4j5iAw8uqjHIE",
-    authDomain: "project-3-2-a6da7.firebaseapp.com",
-    projectId: "project-3-2-a6da7",
-    storageBucket: "project-3-2-a6da7.firebasestorage.app",
-    messagingSenderId: "783707848841",
-    appId: "1:783707848841:web:3a7efcdcbd9a8ad6ed0658"
+    apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+    authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.VUE_APP_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig)
